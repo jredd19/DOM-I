@@ -39,4 +39,16 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
   },
 };
 
+const logoImage = document.querySelector('#logo-img');
+logoImage.src = "http://localhost:9000/img/logo.png";
+
+const ctaImage = document.querySelector('#cta-img');
+ctaImage.src = "http://localhost:9000/img/cta.png";
+
+const accentImage = document.querySelector('#middle-img');
+accentImage.src = "http://localhost:9000/img/accent.png";
+
+const links = doucument.querySelector('header a');
+links.textContent = siteContent.nav-item-1;
+
 console.log('project wired!')
