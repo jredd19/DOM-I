@@ -48,7 +48,12 @@ ctaImage.src = "http://localhost:9000/img/cta.png";
 const accentImage = document.querySelector('#middle-img');
 accentImage.src = "http://localhost:9000/img/accent.png";
 
-const links = doucument.querySelector('header a');
-links.textContent = siteContent.nav-item-1;
-
+const links = document.querySelector('header a');
+links.textContent = siteContent.nav
+links.classList.add('italics')
+console.log(links)
+const footer = document.querySelector('footer a');
+footer.textContent = siteContent.footer.copyright;
+footer.classList.add('bold')
+console.log(footer)
 console.log('project wired!')
